@@ -1,6 +1,7 @@
 import Conexion.Conexion;
 
 import javax.swing.*;
+import javax.swing.table.DefaultTableModel;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.Connection;
@@ -84,6 +85,19 @@ public class AlumnoGUI {
 
             }
         });
+    }
+
+    public void obtenerGrado()
+    {
+        DefaultTableModel modelo = new DefaultTableModel();
+
+        modelo.addColumn("nAlum");
+        modelo.addColumn("Nombre");
+        modelo.addColumn("Apellido");
+        modelo.addColumn("Direccion");
+        modelo.addColumn("Telefono");
+
+
     }
 
     public static void main(String[] args) {

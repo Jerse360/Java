@@ -164,8 +164,6 @@ public class AnimalesGUI {
             }
         });
 
-        table1.addMouseListener(new MouseAdapter() {
-        });
     }
 
     public void obtenerAnimal () {
